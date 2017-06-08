@@ -2,8 +2,6 @@ FROM debian:jessie
 
 RUN DEBIANFRONTEND=noninteractive apt-get -qq update
 
-RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
-
 ADD build.sh /build.sh
 ADD run.sh /run.sh
 ADD nfsen.conf /nfsen.conf
