@@ -11,7 +11,7 @@ Update time zone in Dockerfile !!
 Pull from docker.io
 ----------
 
- 	docker push echochio/docker-nfsen
+ 	docker poll echochio/docker-nfsen
 
 
 How to run
