@@ -12,9 +12,6 @@ apt-get -y install build-essential flex bison rrdtool librrds-perl libmailtools-
 
 lighttpd-enable-mod fastcgi-php
 
-#php http?
-#xdrum/nginx-extras
-
 mkdir -p /build
 
 cd /build
@@ -34,9 +31,4 @@ cd nfsen-1.3.7
 # clean ugly mac files
 find . | grep "\\._" | xargs rm
 
-
 mkdir /data
-
-#cp /nfsen.conf etc/nfsen.conf
-#./install.pl etc/nfsen.conf
-
