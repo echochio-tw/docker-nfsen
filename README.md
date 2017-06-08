@@ -8,7 +8,9 @@ How to run
 
 You can use ./run.sh or write your own startup:
 
-	docker run -d -h netflow --name netflow -e NFSEN_SOURCES="RouterOS,9996,#00ff00" -p 8080:80 -p 9996:9996/udp -v `pwd`/data:/data netflow "$@"
+	docker run -d -h netflow --name netflow -e NFSEN_SOURCES="RouterOS,9996,#00ff00" -p 8080:80 -p 9996:9996/udp -v /data:/data docker-nfsen "$@"
+
+It will create nftrack PortTracker DB take 5-20 min
 
 NFSEN_SOURCES defines NetFlow sources.
 Each source has 3 fields: name, port, color. Multiple sources are separated by collon.
