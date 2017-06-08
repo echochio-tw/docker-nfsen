@@ -3,6 +3,11 @@ Docker NFSEN
 
 NFSEN is a frontent to NFDUMP. It is used to collect and process NetFlow data from network devices.
 
+Update time zone in Dockerfile !!
+----------
+
+	RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+
 Pull from docker.io
 ----------
 
